@@ -460,7 +460,6 @@ packingsolver::box::Output packingsolver::box::optimize(
     optimize_trivial_bound(instance, algorithm_formatter);
 
     if (instance.objective() == Objective::BinPacking
-            || instance.objective() == Objective::BinPackingWithLeftovers
             || instance.objective() == Objective::Knapsack
             || instance.objective() == Objective::VariableSizedBinPacking
             || instance.objective() == Objective::Feasibility) {

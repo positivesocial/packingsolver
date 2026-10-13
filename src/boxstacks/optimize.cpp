@@ -518,7 +518,6 @@ packingsolver::boxstacks::Output packingsolver::boxstacks::optimize(
     if (parameters.use_box_bounds
             && (instance.objective() == Objective::Knapsack
                 || instance.objective() == Objective::BinPacking
-                || instance.objective() == Objective::BinPackingWithLeftovers
                 || instance.objective() == Objective::VariableSizedBinPacking
                 || instance.objective() == Objective::Feasibility)) {
         optimize_box_bound(instance, parameters, algorithm_formatter);
